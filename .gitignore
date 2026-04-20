@@ -1,0 +1,19 @@
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local investigation artifacts
+.playwright-cli/
+*.har
+*.trace.zip
+cookies*.json
+playwright-state*.json
+session.json
+session-*.json
+storage-state*.json
+
+# Scratch directories
+temp/
+tmp/
