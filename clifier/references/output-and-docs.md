@@ -80,18 +80,24 @@ that explicitly:
 - show representative `--json` output shapes when useful
 - show the success and error shape when the CLI wraps provider responses
 
-Also generate a compact root `COMMANDS.md` suitable to pass to another agent.
-Keep it short and operational.
+Also generate a compact root `COMMANDS.md` as a CLI cheat sheet suitable to
+pass to another agent. Keep it short, operational, and optimized for fast
+scanning.
 
 If the package exposes both a client library and a CLI, keep this compact
 commands document focused on the CLI and put library usage in the overview or
 publishing notes in `README.md`.
 
-That compact commands document should:
+That cheat sheet should:
 
+- prefer copy-pasteable commands over paragraphs
+- group commands by setup, auth, and main workflows when that improves scanning
 - start with `doctor` and auth/bootstrap commands when they exist
 - show the main noun-then-verb commands for the common workflow
 - prefer `--json` in examples meant for agent use
 - call out non-destructive defaults and any dangerous write commands
 - show how to invoke the CLI locally and, for JSR-ready tools, how to invoke it
   as `deno x jsr:@scope/package/cli`
+- show the stable IDs or output fields a command emits when later commands
+  consume them
+- keep each command entry to the command plus a short note only when needed

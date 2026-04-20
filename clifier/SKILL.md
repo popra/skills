@@ -133,6 +133,8 @@ polishing the result.
 - Deliver concise human output, stable JSON, useful errors, and clear next-step
   affordances.
 - Include a root `README.md` and a root `COMMANDS.md`.
+- Make `COMMANDS.md` a cheat sheet: short, scan-friendly, and centered on
+  copy-pasteable CLI invocations rather than prose.
 - Keep command names, help text, docs, and examples aligned.
 - When the tool depends on Playwright browsers or other non-bundled runtime
   dependencies, validate the missing-dependency path too.
